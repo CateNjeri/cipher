@@ -4,7 +4,7 @@ $(document).ready(function(){
   var one = sentence.charAt(0).toUpperCase();
   var two = sentence.slice(-1).toUpperCase();
   return one + two
-}
+  }
 
     var rever = function(sentence){
     var reverse =sentence.split('').reverse().join('')
@@ -17,8 +17,13 @@ $(document).ready(function(){
     alert(rever(sentence))
     alert(sentence + reverse(sentence))
     }
+    var  four = function(sentence){
+      var length = sentence.length
+      var position= sentence.charAt(length / 2)
+      alert(position + sentence + rever(sentence))
+    }
 
     var sentence = prompt("Enter a sentence");
-    alert(rever(sentence))
+   alert(four(sentence))
 
 });
